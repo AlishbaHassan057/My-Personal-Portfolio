@@ -1,0 +1,27 @@
+.footer{
+    background: #2B4368;
+    margin-top: 5rem !important;
+}
+.contacts{
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+.contactinfo h1 {
+  color: #fff; 
+}
+
+
+
+.contacts .row .col-10 {
+  color: #fff; 
+}
+
+.contacts .row .col-10 a {
+  color: #fff; 
+  text-decoration: none; 
+}
+
+.contacts .row .col-10 a:hover {
+  text-decoration: underline; 
+
+}

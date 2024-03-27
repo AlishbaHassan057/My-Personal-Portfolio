@@ -12,8 +12,8 @@ const Navbar = () => {
               <nav className="navbar">
                 <a href="#" style={{'--i': 1}} className="active">Home</a>
                 <a href="#" style={{'--i': 2}}>About</a>
-                <a href="#" style={{'--i': 3}}>Skill</a>
-                <a href="#" style={{'--i': 4}}>Portfolio</a>
+                <a href="#" style={{'--i': 3}}>Expertise</a>
+                <a href="#" style={{'--i': 4}}>Projects</a>
                 <a href="#" className="me-5" style={{'--i': 5}}>Contact</a>
               </nav>
             </div>

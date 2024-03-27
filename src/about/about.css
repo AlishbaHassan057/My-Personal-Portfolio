@@ -6,5 +6,18 @@
     text-align: justify;
 }
 .about{
-    margin-left: 15rem !important;
+    text-align: justify;
+}
+.about-card{
+    background: #0C1337;
+    
+}
+.about-card {
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.about-card:hover {
+  transform: translateY(-5px);
+  background-color: #2B4368;
+  cursor: pointer;
 }

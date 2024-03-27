@@ -1,9 +1,10 @@
 import React, { useEffect } from 'react';
-import Typed from 'typed.js'; // Import Typed from the typed.js library
+import Typed from 'typed.js'; 
+
 
 const Hero = () => {
   useEffect(() => {
-    // Initialize Typed when the component mounts
+
     var typed = new Typed(".text", {
       strings: ["Frontend Developer", "Backend Developer", "Web Developer"],
       typeSpeed: 100,
@@ -12,12 +13,11 @@ const Hero = () => {
       loop: true
     });
 
-    // Clean up Typed when the component unmounts
+
     return () => {
       typed.destroy();
     };
-  }, []); // Empty dependency array ensures that this effect runs only once
-
+  }, []); 
   return (
     <section className="home d-flex align-items-center justify-content-around">
       <div className="home-content">
@@ -34,7 +34,7 @@ const Hero = () => {
         <a href="#" className="btn-box">Download CV</a>
       </div>
       <div className="imgs">
-        <img src="assets/me.png" alt="Home Image" className="home-img" />
+        <img src="../assets/me.png" alt="Home Image" className="home-img" />
       </div>
     </section>
   );

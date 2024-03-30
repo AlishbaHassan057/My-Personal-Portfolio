@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import Typed from 'typed.js'; 
+import './hero.css'
 
 
 const Hero = () => {
@@ -33,9 +34,9 @@ const Hero = () => {
         </div>
         <a href="#" className="btn-box">Download CV</a>
       </div>
-      <div className="imgs">
+      {/* <div className="imgs">
         <img src="../assets/me.png" alt="Home Image" className="home-img" />
-      </div>
+      </div> */}
     </section>
   );
 };

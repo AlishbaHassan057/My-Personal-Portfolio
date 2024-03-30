@@ -20,7 +20,8 @@ body{
     align-items: center;
     z-index: 100;
     align-self: center;
-    background: #2B4368
+    background: #2B4368;
+    display: block;
  
 }
 .logo{
@@ -202,4 +203,90 @@ box-shadow:  0 0 5px #0ef;
         opacity: 1;
     }
 }
+/* navbar.css */
 
+/* Your existing styles */
+
+@media (max-width: 830px) {
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding-right: 1rem; 
+  }
+  
+  .logo {
+    margin-left: 2rem;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .hamburger-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    position: relative;
+    margin-right: 1rem;
+  }
+  .menu-open .navbar {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right:2.4rem ;
+}
+
+
+  .line {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 5px;
+    transition: all 0.0001s ease;
+  }
+
+  .line.open:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .line.open:nth-child(2) {
+    opacity: 0;
+  }
+
+  .line.open:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu-open .icons {
+    display: block;
+    position: absolute;
+    top:3rem; 
+    right: 3rem;
+    width: 200px;
+    height: 200px;
+color: white;
+    background: rgb(25, 55, 109);
+    background: linear-gradient(
+      0deg,
+      rgba(25, 55, 109, 0.2) 0%,
+      rgba(25, 55, 109, 1) 100%
+    );
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+    border: 1px solid #0ef;
+  }
+
+  .menu-open .icons a {
+    display: block;
+    margin-bottom: 1px; 
+    color: white; 
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .menu-open .icons a:hover {
+    color: #0ef; 
+  }
+}
